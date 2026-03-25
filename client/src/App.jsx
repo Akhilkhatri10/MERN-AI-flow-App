@@ -107,7 +107,7 @@ function App() {
       setLoading(true);
       setError('');
 
-      const res = await axios.post('http://localhost:5000/api/ask-ai', {
+      const res = await axios.post(`${import.meta.env.VITE_BACKEND_URL}/api/ask-ai`, {
         prompt
       });
 
@@ -123,7 +123,7 @@ function App() {
   // Save
   const saveData = async () => {
     try {
-      await axios.post('http://localhost:5000/api/save', {
+      await axios.post(`${import.meta.env.VITE_BACKEND_URL}/api/save`, {
         prompt,
         response: result
       });
