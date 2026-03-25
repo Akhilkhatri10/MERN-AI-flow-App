@@ -29,7 +29,7 @@ A full-stack MERN application that allows users to input a prompt, generate an A
 ### 1️⃣ Clone the repository
 
 ```bash
-git clone 
+git clone https://github.com/Akhilkhatri10/MERN-AI-flow-App.git
 cd mern-ai-flow-app
 ```
 
